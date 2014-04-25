@@ -1,7 +1,6 @@
-LibraryManager
-==============
+== LibraryManager
 
-“Library manager” is a simple web-application for books and readers management. 
+“Library manager” is a simple web-application for books and readers management.
 
 - To whom it may be interesting? – To librarians and their readers.
 
