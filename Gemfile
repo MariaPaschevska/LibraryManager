@@ -5,6 +5,7 @@ gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -32,11 +33,37 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'better_errors'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
+group :test do
+  # gem 'capybara-screenshot'
+  # gem 'resque_spec'
+  # gem 'ci_reporter', '1.6.4'
+  # gem 'spork', '0.9.2'
+  # gem 'timecop', '0.7.1'
+  gem 'factory_girl', '~> 4.1'
+  gem 'factory_girl_rails', '~> 4.1'
+  # gem 'email_spec'
+  # gem 'fakeweb', :require => false
+  # gem 'thin'
+  # gem 'simplecov', :require => false
+  # gem 'simplecov-html', :require => false
+  # gem 'database_cleaner', :require => false
+  gem 'site_prism'
+end
+
+group :development, :test do
+  gem 'capybara', '~> 2.0.1'
+  gem 'rspec-rails', '2.11.0'
+  gem 'turnip', '~> 1.1.0'
+  gem 'pry'
+  gem 'pry-doc'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
